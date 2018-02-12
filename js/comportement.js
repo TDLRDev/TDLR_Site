@@ -4,6 +4,8 @@ function init()
 {
     $('#fullpage').fullpage({
         verticalCentered: false,
-        navigation: true
+        navigation: true,
+        anchors: ['homePage', 'firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+	    menu: '#myMenu'
     });
 }

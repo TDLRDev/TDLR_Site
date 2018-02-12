@@ -11,26 +11,28 @@
     <body>
         <header>
             <nav id="main_menu">
-                <ul>
-                    <li><a href="#" title="JEU">Jeu</a></li>
-                    <li><a href="#" title="NEWS">Etapes / news du jeu</a></li>
-                    <li><a href="#" title="HISTOIRE">L'histoires/ backround du jeu</a></li>
-                    <li><a href="#" title="A PROPOS">Qui sommes nous</a></li>
+                <ul id="myMenu">
+                    <li data-menuanchor="homePage" class="active"><a href="#homePage" title="Accueil">Accueil</a></li>
+                    <li data-menuanchor="firstPage"><a href="#firstPage" title="JEU">Jeu</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage" title="NEWS">Etapes / news du jeu</a></li>
+                    <li data-menuanchor="thirdPage"><a href="#thirdPage" title="HISTOIRE">L'histoires/ backround du jeu</a></li>
+                    <li data-menuanchor="fourthPage"><a href="#fourthPage" title="A PROPOS">Qui sommes nous</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
             <div id="fullpage">
-                <div class="section">HOME
+                
+                <div class="section" data-anchor="homePage">HOME
                     <h1></h1>
                 </div>
                 
-                <div class="section">Jeu</div>
+                <div class="section" data-anchor="firstPage">Jeu</div>
                 
-                <div class="section">Etapes / news du jeu</div>
+                <div class="section" data-anchor="secondPage">Etapes / news du jeu</div>
                 
-                <div class="section">
+                <div class="section" data-anchor="thirdPage">
                     <div>L'histoires/ backround du jeu</div>
                     <div>
                         <div class="slide"> List des unités </div>
@@ -38,7 +40,7 @@
                         <div class="slide"> Liste des cartes </div>
                     </div>
                 </div>
-                <div class="section">Qui sommes nous</div>
+                <div class="section" data-anchor="fourthPage">Qui sommes nous</div>
             </div>
         </main>
         
