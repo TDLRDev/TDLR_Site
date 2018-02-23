@@ -5,7 +5,7 @@ function init()
     $('#fullpage').fullpage({
         verticalCentered: false,
         navigation: true,
-        anchors: ['homePage', 'firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        anchors: ['homePage', 'pageJeu', 'pageNews', 'pageHistoire', 'PageNous'],
 	    menu: '#myMenu'
     });
 }

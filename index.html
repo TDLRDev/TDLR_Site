@@ -6,17 +6,20 @@
         <title>Page Title</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+        
     </head>
     
     <body>
         <header>
             <nav id="main_menu">
                 <ul id="myMenu">
-                    <li data-menuanchor="homePage" class="active"><a href="#homePage" title="Accueil">Accueil</a></li>
-                    <li data-menuanchor="firstPage"><a href="#firstPage" title="JEU">Jeu</a></li>
-                    <li data-menuanchor="secondPage"><a href="#secondPage" title="NEWS">Etapes / news du jeu</a></li>
-                    <li data-menuanchor="thirdPage"><a href="#thirdPage" title="HISTOIRE">L'histoires/ backround du jeu</a></li>
-                    <li data-menuanchor="fourthPage"><a href="#fourthPage" title="A PROPOS">Qui sommes nous</a></li>
+                    <li data-menuanchor="homePage" class="active"><a href="#homePage" title="Accueil"><i class="fab fa-fort-awesome fa-3x"></i></a></li>
+                    <li data-menuanchor="firstPage"><a href="#pageJeu" title="JEU"><i class="fas fa-gamepad fa-3x"></i></a></li>
+                    <li data-menuanchor="secondPage"><a href="#pageNews" title="NEWS"><i class="far fa-newspaper fa-3x"></i></a></li>    
+                    <li data-menuanchor="thirdPage"><a href="#pageHistoire" title="HISTOIRE"><i class="fas fa-book fa-3x"></i></a></li>
+                    <li data-menuanchor="fourthPage"><a href="#PageNous" title="A PROPOS"><i class="far fa-address-card fa-3x"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -24,23 +27,17 @@
         <main>
             <div id="fullpage">
                 
-                <div class="section" data-anchor="homePage">HOME
-                    <h1></h1>
-                </div>
+                <section class="section " id="home" data-anchor="homePage"><img id="titre" src="images/Surrounded.png" alt="Surrounded"></section>
                 
-                <div class="section" data-anchor="firstPage">Jeu</div>
+                <section class="section" data-anchor="pageJeu">Jeu</section>
                 
-                <div class="section" data-anchor="secondPage">Etapes / news du jeu</div>
+                <section class="section" data-anchor="pageNews">Etapes / news du jeu</section>
                 
-                <div class="section" data-anchor="thirdPage">
+                <section class="section" data-anchor="pageHistoire">
                     <div>L'histoires/ backround du jeu</div>
-                    <div>
-                        <div class="slide"> List des unités </div>
-                        <div class="slide"> List des tourelles </div>
-                        <div class="slide"> Liste des cartes </div>
-                    </div>
-                </div>
-                <div class="section" data-anchor="fourthPage">Qui sommes nous</div>
+                    <div> Description </div>
+                </section>
+                <section class="section" data-anchor="PageNous">Qui sommes nous</section>
             </div>
         </main>
         

@@ -1,0 +1,76 @@
+body
+{
+    background-color: green;
+    color: white;
+}
+
+
+a
+{
+    color:black;
+    transition: transform 2s; /* Animation */
+    
+}
+
+a:hover
+{
+    color:red;
+    transform: scale(1.1);
+       
+}
+#main_menu
+{
+    background-color: rgba(255,255,255,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 70; /* premier plan */
+    height: 100%;
+    width: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+#myMenu 
+{
+    display:flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    
+}
+
+#myMenu li 
+{
+    flex: 1;
+    
+}
+
+#myMenu a
+{
+ 
+}
+
+#home
+{
+    background-color: black;
+    background-image: url("../images/mars.jpg");
+    background-repeat: no-repeat;
+    background-position:0% 100%; 
+}
+
+#titre
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+
+
+
+
+/*  overflow: auto; permet de mettre une barre scroll
+
