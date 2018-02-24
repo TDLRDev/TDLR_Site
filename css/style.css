@@ -1,26 +1,33 @@
+/******************************************************* Régles Globales ***********************************************/
 body
 {
-    background-color: green;
+    background-color: black;
     color: white;
 }
-
 
 a
 {
     color:black;
     transition: transform 2s; /* Animation */
-    
 }
 
 a:hover
 {
     color:red;
-    transform: scale(1.1);
-       
+    transform: scale(1.1);   
 }
+
+main
+{
+    margin-left:100px;
+}
+
+/***************************************************** Régles Globales Fin ***********************************************/
+
+/***************************************************** Barre de Navigation ***********************************************/
 #main_menu
 {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,1);
     position: fixed;
     top: 0;
     left: 0;
@@ -31,28 +38,23 @@ a:hover
     margin: 0;
 }
 
-#myMenu 
+#myMenu
 {
+    padding: 0;
+    margin: 0px;
     display:flex;
     height: 100%;
     flex-direction: column;
     align-items: center;
     list-style: none;
-    
+    justify-content: space-around;   
 }
 
-#myMenu li 
-{
-    flex: 1;
-    
-}
+/***************************************************** Barre de Navigation Fin ************************/
 
-#myMenu a
-{
- 
-}
+/***************************************************** Section Home ***********************************/ 
 
-#home
+#sectionHome
 {
     background-color: black;
     background-image: url("../images/mars.jpg");
@@ -66,11 +68,76 @@ a:hover
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
+    width: 40%;
+	height: auto;
 }
 
+/****************************************************** Section Home Fin *******************************/ 
+
+/****************************************************** Section Jeu ************************************/ 
+
+#sectionJeu
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sectionJeu article
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.imageResume
+{
+    width: 250px;
+    
+}
+
+/****************************************************** Section Jeu Fin ********************************/ 
+
+/****************************************************** Section News ********************************/ 
+
+#sectionNews
+{
+    text-align: center;
+    overflow: auto; /*permet de mettre une barre scroll*/
+}
+
+#sectionNews 
+{
+    
+    
+}
+/****************************************************** Section News Fin ********************************/ 
 
 
 
+/****************************************************** Section A Propos ********************************/ 
 
-/*  overflow: auto; permet de mettre une barre scroll
+#sectionMenu
+{
+    background-color: rgba(255,255,255,1);
+    top: 0;
+    left: 0;
+    z-index: 70; /* premier plan */
+    height: 50px;
+    width: 100%;
+}
 
+#ourMenu
+{
+    padding: 0;
+    margin: 0px;
+    display:flex;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;   
+}
+
+/****************************************************** Section A Propos Fin ********************************/
