@@ -2,24 +2,25 @@
 body
 {
     background-color: black;
-    color: white;
+    color: white;   
 }
 
 a
 {
     color:black;
-    transition: transform 2s; /* Animation */
 }
 
-a:hover
-{
-    color:red;
-    transform: scale(1.1);   
-}
 
 main
 {
     margin-left:100px;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 /***************************************************** Régles Globales Fin ***********************************************/
@@ -46,9 +47,14 @@ main
     height: 100%;
     flex-direction: column;
     align-items: center;
-    list-style: none;
     justify-content: space-around;   
 }
+
+#myMenu a:hover
+{
+    color:red;   
+}
+
 
 /***************************************************** Barre de Navigation Fin ************************/
 
@@ -82,6 +88,12 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+}
+
+#sectionJeu h2
+{
+    color: black;
 }
 
 #sectionJeu article
@@ -90,6 +102,8 @@ main
     display: flex;
     align-items: center;
     text-align: center;
+    overflow: auto;
+    background-color: black;
 }
 
 .imageResume
@@ -108,14 +122,134 @@ main
     overflow: auto; /*permet de mettre une barre scroll*/
 }
 
-#sectionNews 
-{
-    
-    
-}
+
 /****************************************************** Section News Fin ********************************/ 
 
+/****************************************************** Section Histoire ********************************/ 
 
+#sectionHistoire
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#histoire
+{
+   background-color: red;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+}
+
+#histoire p
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto; 
+    overflow: auto;
+}
+
+#description
+{
+    
+    background-color: blue;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*******************************************************************/
+
+
+#menuDescription
+{
+    width:100%;
+    background-color: white;
+}
+
+#niveauUn
+{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#menuDescription>ul>li
+{
+    flex-flow:row;
+}
+
+/*#menuDescription > ul > li
+{
+    float: left; 
+    position: relative;
+}*/
+
+.niveauDeux
+{
+    display: none; 
+}
+
+#menuDescription li:hover .niveauDeux
+{
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 100%;
+    left: 0px;
+    z-index: 100000;
+}
+
+#menuDescription a
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    text-decoration: none;
+}
+
+#menuDescription> ul > li > a
+{
+    padding: 20px;
+    color:darkturquoise;
+}
+
+.niveauDeux li
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: green;
+    border-bottom:  1px solid #CCC;
+}
+
+.niveauDeux li a
+{
+    padding: 15px 30px;
+    font-size: 13px;
+    width: 300px;
+}
+
+.imageMinActive
+{
+    width:50%;
+}
+
+.imageMinInactive
+{
+    display:none;
+}
+
+/****************************************************** Section Histoire FIN ********************************/ 
 
 /****************************************************** Section A Propos ********************************/ 
 
@@ -136,8 +270,12 @@ main
     display:flex;
     height: 100%;
     align-items: center;
-    list-style: none;
     justify-content: space-around;   
+}
+
+#ourMenu a:hover
+{
+    color:red;   
 }
 
 /****************************************************** Section A Propos Fin ********************************/
