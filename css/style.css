@@ -103,13 +103,19 @@ ul
     align-items: center;
     text-align: center;
     overflow: auto;
-    background-color: black;
+    background-color: black; 
+}
+
+#sectionJeu article p
+{
+    height: auto;
+    margin: 0px;
 }
 
 .imageResume
 {
-    width: 250px;
-    
+    max-width: 20%; 
+    height: auto;
 }
 
 /****************************************************** Section Jeu Fin ********************************/ 
@@ -118,10 +124,22 @@ ul
 
 #sectionNews
 {
+    background-color: white;
     text-align: center;
-    overflow: auto; /*permet de mettre une barre scroll*/
+}
+h2
+{
+    color: black;
+    padding: 20px;
+    margin: 0px;
 }
 
+#sectionNews article
+{
+    background-color: black;
+    overflow: auto; /*permet de mettre une barre scroll*/
+    height: 100%;
+}
 
 /****************************************************** Section News Fin ********************************/ 
 
@@ -135,12 +153,21 @@ ul
 
 #histoire
 {
-   background-color: red;
+    background-color: black;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;   
+    text-align: center;
+}
+
+#histoire h2
+{
+    background-color: white;
+    color: black;
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
 }
 
 #histoire p
@@ -151,19 +178,19 @@ ul
     overflow: auto;
 }
 
+
+
+/*******************************************************************/
 #description
 {
     
-    background-color: blue;
+    background-color: dimgrey;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
-
-/*******************************************************************/
 
 
 #menuDescription
@@ -177,7 +204,7 @@ ul
     display: flex;
     justify-content: space-around;
     position: relative;
-    flex-wrap: wrap;
+    padding: 0px;
 }
 
 #menuDescription>ul>li
@@ -198,7 +225,6 @@ ul
 
 #menuDescription li:hover .niveauDeux
 {
-    background-color: blue;
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -213,30 +239,36 @@ ul
 {
     display: flex;
     justify-content: space-around;
-    background-color: aqua;
     text-decoration: none;
 }
 
 #menuDescription> ul > li > a
 {
-    padding: 20px;
-    color:darkturquoise;
+    color:black;
+    font-size: 20px;
+    padding: 22px;
 }
 
 .niveauDeux li
 {
+    background-color: white;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background: green;
     border-bottom:  1px solid #CCC;
 }
 
 .niveauDeux li a
 {
     padding: 15px 30px;
-    font-size: 13px;
-    width: 300px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#description article
+{
+    margin: auto;
+    width: 100%;
 }
 
 .imageMinActive
@@ -245,6 +277,16 @@ ul
 }
 
 .imageMinInactive
+{
+    display:none;
+}
+
+.textActif
+{
+    padding:20px;
+}
+
+.textInactif
 {
     display:none;
 }
