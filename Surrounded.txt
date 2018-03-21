@@ -1,0 +1,6 @@
+﻿choses à changer:
+	- icones qui clignotent
+	- rajouter nom de la section sous l'icone au survol
+	- faire un résumé du jeu moins large
+	- mettre un index sur les dates des maj
+	- contenu du site à ajouté
