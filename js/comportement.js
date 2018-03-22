@@ -9,15 +9,33 @@ function init()
 	    menu: '#myMenu'
     });
     
-   /* $('#niveauUn li').on('click', function() {
-        $('#photo h2').text($('a', this).attr('title'));
-        $('#big_pict').attr('src', $('a', this).attr('href'));
-        $('#big_pict').attr('alt', $('a img', this).attr('alt'));
-    });*/
-    $('#toto').on('click', function() {
-        //$('#photo h2').text($('a', this).attr('title'));
-        $('#description img').first().attr('class', 'imageMinInactive');
-        $('#description img:nth-child(2)').attr('class', 'imageMinActive');
+    
+    // au clique sur la section le text et les images changent
+    $('#niveauUn li').click(function(){
+        var to_show = $(this).attr('desc'); // je recupere le nom de reference qui sera commum a un texte, une image 
+        //var maListe = $('#menuDescription');
         
-    });
+        $('#description article img').each(function(){
+            if ($(this).attr('desc') == to_show) 
+            {
+                $(this).attr('class', 'imageMinActive');
+            }
+            else
+            {
+                $(this).attr('class', 'imageMinInactive');    
+            }
+        });
+        
+        $('#description article p').each(function(){
+            if ($(this).attr('desc') == to_show) 
+            {
+                $(this).attr('class', 'textActif');
+            }
+            else
+            {
+                $(this).attr('class', 'textInactif');    
+            }
+        });
+        
+    });  
 }
