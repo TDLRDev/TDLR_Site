@@ -179,7 +179,24 @@ h2
     overflow: auto;
 }
 
+#histoire div
+{
+    margin: auto;
+    width: 100%;
+}
 
+.textActif
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto; 
+    overflow: auto;
+}
+
+.textInactif
+{
+    display:none;
+}
 
 /*******************************************************************/
 #description
@@ -264,15 +281,43 @@ h2
     display:none;
 }
 
-.textActif
+.tableauActif
 {
-    padding:20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;  
 }
 
-.textInactif
+.tableauActif th 
 {
-    display:none;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    width: 50%;
+    text-align: left;
+    padding: 5px;
+    padding-left: 20px
 }
+
+.tableauActif td
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#firstTr td
+{
+    border-top-right-radius: 20px;
+}
+#firstTr th
+{
+    border-top-left-radius: 20px;
+}
+
+.tableauInactif
+{
+    display: none;
+}
+
 
 /****************************************************** Section Histoire FIN ********************************/ 
 
@@ -336,6 +381,7 @@ h2
     height: auto;
     width: 50%;
     max-width: 500px;
+    max-height: 100%;
     margin-left: 10px;
     padding: 20px;
     margin-right: auto;
@@ -363,7 +409,7 @@ h2
     width: 80%;
 }
 
-#sectionNous th, td
+#sectionNous th, #sectionNous td
 {
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;

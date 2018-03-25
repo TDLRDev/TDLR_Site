@@ -18,5 +18,8 @@ function init()
         
         $('p[desc="'+to_show+'"').attr('class', 'textActif');
         $('p[desc="'+to_show+'"').siblings().attr('class', 'textInactif');
+        
+        $('table[desc="'+to_show+'"').attr('class', 'tableauActif');
+        $('table[desc="'+to_show+'"').siblings().attr('class', 'tableauInactif');
     });    
 }
