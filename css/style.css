@@ -323,15 +323,24 @@ h2
 
 /****************************************************** Section A Propos ********************************/ 
 
-#sectionMenu
+/*#sectionMenu
 {
     background-color: rgba(255,255,255,1);
     top: 0;
     left: 0;
-    z-index: 70; /* premier plan */
+    z-index: 70; // premier plan 
     height: 50px;
     width: 100%;
-}
+} */
+
+#sectionMenu
+{
+    background-color: white;
+    z-index: 70;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+} 
 
 #ourMenu
 {
@@ -365,7 +374,7 @@ h2
 
 .corps a
 {
-    color: aqua
+    color: aqua;
 }
 .corps
 {
