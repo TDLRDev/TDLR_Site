@@ -7,7 +7,7 @@ body
 
 a
 {
-    color:black;
+    color:rgba(04,15,29,1);
 }
 
 
@@ -53,7 +53,7 @@ ul
 
 #myMenu a:hover
 {
-    color:red;   
+    color:rgba(189,202,218,1);   
 }
 
 
@@ -92,7 +92,6 @@ ul
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 #sectionJeu h2
@@ -117,6 +116,7 @@ ul
     height: auto;
     width: 50%;
     text-align: justify;
+    font-size: 20px;
 }
 
 .imageResume
@@ -194,6 +194,7 @@ h2
     overflow: auto;
     width: 70%;
     text-align: justify;
+    font-size: 24px;
 }
 
 #histoire div
@@ -218,7 +219,6 @@ h2
 /*******************************************************************/
 #description
 {
-    
     background-color: dimgrey;
     width: 50%;
     display: flex;
@@ -241,7 +241,7 @@ h2
     justify-content: space-around;
     position: relative;
     font-size: 20px;
-    color: grey;
+    color: rgba(189,202,218,1);
 }
 
 #niveauUn>li
@@ -286,10 +286,12 @@ h2
 {
     margin: auto;
     width: 100%;
+    overflow: auto;
 }
 
 .imageMinActive
 {
+    margin-top: 5%;
     width:50%;
 }
 
@@ -304,6 +306,7 @@ h2
     margin-left: auto;
     margin-right: auto;
     width: 80%;  
+    margin-bottom: 5%;
 }
 
 .tableauActif th 
@@ -369,10 +372,12 @@ h2
     justify-content: space-around;   
 }
 
-#ourMenu a:hover
-{
-    color:red;   
-}
+/*
+    #ourMenu a:hover
+    {
+        color:red;   
+    }
+*/
 
 .slide
 {
@@ -381,6 +386,7 @@ h2
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 #sectionNous h1
@@ -393,6 +399,7 @@ h2
 {
     color: rgba(149,162,178,1);
 }
+
 .corps
 {
     background-color: rgba(0, 0, 0, 0.5);
@@ -426,7 +433,7 @@ h2
 
 #sectionNous table
 {
-    
+    margin-bottom: 0px;
     border-radius: 20px;
     margin-top: 50px;
     margin-left: auto;
