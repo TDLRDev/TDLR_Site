@@ -63,12 +63,11 @@ ul
 
 #sectionHome
 {
-    background-color: rgba(14,25,39,1);
+    background-color: black;
     background-image: url("../images/mars.jpg");
     background-repeat: no-repeat;
     background-position:0% 100%; 
     background-attachment: fixed;
-    background-size: 100% 100%;
 }
 
 #titre
@@ -357,6 +356,7 @@ h2
 {
     background-color: rgba(69,82,98,1);
     z-index: 70;
+    margin-left: -20px;
     height: 20px;
     width: 100%;
     text-align: center;
@@ -386,9 +386,14 @@ h2
     height: 100%;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
 }
 
+.principal
+{
+    padding-bottom: 60px;
+    overflow: auto;
+    height: 100%;
+}
 #sectionNous h1
 {
     text-align: center;
@@ -407,6 +412,7 @@ h2
     display: flex;
     margin-right: 50px;
     margin-left: 50px;
+    height: auto;
 }
 
 .corps img
@@ -435,7 +441,7 @@ h2
 {
     margin-bottom: 0px;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
