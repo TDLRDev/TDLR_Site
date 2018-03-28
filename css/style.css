@@ -29,7 +29,7 @@ ul
 /***************************************************** Barre de Navigation ***********************************************/
 #main_menu
 {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(69,82,98,1);
     position: fixed;
     top: 0;
     left: 0;
@@ -63,10 +63,12 @@ ul
 
 #sectionHome
 {
-    background-color: black;
+    background-color: rgba(14,25,39,1);
     background-image: url("../images/mars.jpg");
     background-repeat: no-repeat;
     background-position:0% 100%; 
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 #titre
@@ -85,11 +87,12 @@ ul
 
 #sectionJeu
 {
+    background-color: rgba(69,82,98,1);
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    
 }
 
 #sectionJeu h2
@@ -99,18 +102,21 @@ ul
 
 #sectionJeu article
 {
+    background-color: rgba(14,25,39,1);
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     overflow: auto;
-    background-color: black; 
+    padding: 5%;
 }
 
 #sectionJeu article p
 {
     height: auto;
-    margin: 0px;
+    width: 50%;
+    text-align: justify;
 }
 
 .imageResume
@@ -125,11 +131,12 @@ ul
 
 #sectionNews
 {
-    background-color: white;
+    background-color: rgba(14,25,39,1);
     text-align: center;
 }
 h2
 {
+    background-color: rgba(69,82,98,1);
     color: black;
     padding: 20px;
     margin: 0px;
@@ -137,9 +144,17 @@ h2
 
 #sectionNews article
 {
-    background-color: black;
+    background-color: rgba(14,25,39,1);
     overflow: auto; /*permet de mettre une barre scroll*/
     height: 100%;
+}
+
+#sectionNews article p
+{
+    color : rgba(149,162,178,1);
+    width: 75%;
+    margin: auto;
+    text-align: justify;
 }
 
 /****************************************************** Section News Fin ********************************/ 
@@ -154,7 +169,7 @@ h2
 
 #histoire
 {
-    background-color: black;
+    background-color: rgba(14,25,39,1);
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -164,8 +179,8 @@ h2
 
 #histoire h2
 {
-    background-color: white;
-    color: black;
+    background-color: rgba(69,82,98,1);
+    color: rgba(14,25,39,1);
     margin: 0px;
     padding: 20px;
     width: 100%;
@@ -177,6 +192,8 @@ h2
     padding-right: 20px;
     margin: auto; 
     overflow: auto;
+    width: 70%;
+    text-align: justify;
 }
 
 #histoire div
@@ -219,12 +236,12 @@ h2
 
 #niveauUn
 {
-    background-color: aqua;
+    background-color: rgba(39,47,56,1);
     display: flex;
     justify-content: space-around;
     position: relative;
     font-size: 20px;
-    color: Black;
+    color: grey;
 }
 
 #niveauUn>li
@@ -296,7 +313,7 @@ h2
     width: 50%;
     text-align: left;
     padding: 5px;
-    padding-left: 20px
+    padding-left: 20px;        
 }
 
 .tableauActif td
@@ -335,7 +352,7 @@ h2
 
 #sectionMenu
 {
-    background-color: white;
+    background-color: rgba(69,82,98,1);
     z-index: 70;
     height: 20px;
     width: 100%;
@@ -369,12 +386,12 @@ h2
 #sectionNous h1
 {
     text-align: center;
-    color: aqua;
+    color: rgba(14,25,39,1);
 }
 
 .corps a
 {
-    color: aqua;
+    color: rgba(149,162,178,1);
 }
 .corps
 {
@@ -395,8 +412,7 @@ h2
     padding: 20px;
     margin-right: auto;
     margin-bottom: auto;
-    margin-top: auto;
-    
+    margin-top: auto;   
 }
 
 .biographie
